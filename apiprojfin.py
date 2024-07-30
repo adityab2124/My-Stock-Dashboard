@@ -102,11 +102,10 @@ for element in index_elements:
     
 
 
-# Sample data
-    # Add more data as needed
 
 
-# Connect to MySQL database
+
+#Connect to MySQL database
 conn = sql.connect(
     user='root',
     password='ok',
@@ -154,7 +153,6 @@ try:
         values = list(option.values())
         cursor.execute(sql_insert, values)
 
-    # Commit the changes
     conn.commit()
 
 finally:
