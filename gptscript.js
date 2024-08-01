@@ -1,3 +1,6 @@
+// code for gpt chatbot / to use chatbot, use https://stockdashboard.tiiny.site/
+
+
 const form = document.getElementById('chat-form');
 const mytextInput = document.getElementById('mytext');
 const responseTextarea = document.getElementById('response');
