@@ -1,3 +1,5 @@
+#file to just test quick api pulls and dataframes 
+
 #yfinancetest
 import pandas as pd 
 import yfinance as yf 
