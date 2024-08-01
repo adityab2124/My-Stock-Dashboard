@@ -28,7 +28,3 @@ The project is organized into the following components:
 ### Limitations and Improvements
 
 - **Automation**: Currently, data retrieval and updates are manual. An improvement would be to automate API pulls every quarter to update the SQL database, AWS RDS, and Tableau visuals for continuous and up-to-date financial metrics.
-
----
-
-Let me know if there are any other details you’d like to include or adjust!
