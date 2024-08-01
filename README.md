@@ -1,6 +1,3 @@
-Certainly! Here’s a refined version of the description:
-
----
 
 ### Project Overview
 
