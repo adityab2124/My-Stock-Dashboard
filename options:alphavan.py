@@ -1,4 +1,4 @@
-#my api project - full stack project 
+#my api full stack project 
 
 
 
@@ -10,12 +10,10 @@ import requests
 import pandas as pd 
 import numpy as np 
 import plotly.express as px 
-import tabulate as tab
-from numbers import Number 
 
 
 
-#replace the "demo" apikey below with your own key from https://www.alphavantage.co/support/#api-key
+#replace the "demo" apikey below with your own key 
 url = 'https://alphavantageapi.co/timeseries/analytics?SYMBOLS=AMZN,MSFT,NVDA&RANGE=2024-05-01&RANGE=2024-05-31&INTERVAL=DAILY&OHLC=close&CALCULATIONS=MEAN,STDDEV,CORRELATION&apikey=DF1S1NJLNRR7506D'
 
 r = requests.get(url)
@@ -93,12 +91,12 @@ conn = sql.connect(
     host='localhost',
     database='testdb'
 )
-
+# change tables column according to the data in your api pull 
 try:
     cursor = conn.cursor()
 
     cursor.execute('''
-    CREATE TABLE IF NOT EXISTS helloworld (
+    CREATE TABLE IF NOT EXISTS company_name (
         id INT PRIMARY KEY AUTO_INCREMENT,
         contractID VARCHAR(255),
         symbol VARCHAR(255),
