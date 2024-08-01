@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT 4 Test</title>
+    <style>
+
+  
+    </style>
+    <link rel ='stylesheet' href="style.css">
+</head>
+<body>
+    <div>
+        <h1> Chatbot: </h1>
+        <form id="chat-form">
+            <label for="mytext">Enter your message:</label>
+            <input type="text" id="mytext" rows ='40' style="width: 20%;" required>
+            <button class="button-custom">Send</button>
+
+        </form>
+        <div>
+            <h2>Response:</h2>
+            <!-- <p class="p">  Feel free to the chatbot ask any questions you may have 
+                about the stats presented below on the dashboard or about anything else you 
+                have in mind.  -->
+
+            <!-- </p> -->
+            <textarea id="response" rows="10" style="width: 30%" readonly></textarea>
+            <h4> Suggested Prompts to ask (copy and paste): </h4>
+            
+            <textarea id="textarea1" rows="5" style="width: 30%" readonly>
+"What does the forward P/E ratio indicate about a company's future earnings?"
+"How does the current P/E ratio affect a company's valuation?"
+"Why is the PEG ratio important for growth investors?"
+"What does the price to book ratio suggest about a company's value?"
+"Why is EPS significant for investors?"
+"What does the price to sales ratio TTM indicate about a company's revenue?"
+"How do trends in quarterly openings affect investor sentiment?
+            </textarea>
+            
+     
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<head>
+
+    <h3> Visualizations below: </h3>
+</head>
+<body>
+  
+
+    <br>
+    <div class='tableauPlaceholder' id='viz1722536717691' style='position: relative; width: 1500px; height: 800px;'>
+        <noscript>
+            <a href='#'>
+                <img alt=' ' src='https://public.tableau.com/static/images/Tr/TradingDashboardAIstocks/Dashboard3/1_rss.png' style='border: none' />
+            </a>
+        </noscript>
+        <object class='tableauViz' style='display: block; width: 100%; height: 100%;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='TradingDashboardAIstocks/Dashboard3' />
+            <param name='tabs' value='yes' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https://public.tableau.com/static/images/Tr/TradingDashboardAIstocks/Dashboard3/1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+        </object>
+    </div>
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1722536717691');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+    
+</div>         
+        <h6>Entry recommendations: </h6>
+        <form id="chat-form">
+           
+            <textarea id="textarea1" rows="5" style="width: 30%">
+Forward P/E Ratio: Enter positions when the Forward P/E ratio is below the industry average (current avg is 20-25).  
+P/E Ratio: Look for stocks with a P/E ratio lower than the historical average or industry average (current avg is 20-25).
+PEG Ratio: Target stocks with a PEG ratio below 1.5, suggesting they are undervalued relative to their growth rate.
+Price to Book Ratio: Prefer stocks with a Price to Book ratio below 3, indicating they are not overvalued in terms of assets.
+EPS Growth: Enter positions in companies with consistent EPS growth over the last few quarters, indicating strong earnings performance.
+Price to Sales Ratio TTM: Consider stocks with a Price to Sales ratio TTM below the industry average, indicating a reasonable valuation relative to sales.
+                            </textarea>
+
+                            <h6>Exit recommendations: </h6>
+                            <form id="chatform">
+                               
+                                <textarea id="textarea1" rows="5" style="width: 30%">
+Exit Recommendations:**
+Forward P/E Ratio: Exit when above 30.
+P/E Ratio: Exit when above 30.
+PEG Ratio: Exit when above 2.0.
+Price to Book Ratio: Exit when above 4.
+EPS Growth: Exit if there is a decline in EPS growth over the last few quarters.
+Price to Sales Ratio TTM: Exit when above 4.
+                                                </textarea>
+
+
+
+
+
+
+
+    <!-- <label for="select_company"> Select Ticker:</label>
+    <select id ='select_company' name="select_company">
+        <option value ='MSFT'>MSFT</option> 
+        <option value ='GOOG'>GOOG</option> 
+        <option value ='META'>META</option> 
+    </select>
+    <input type ="submit">
+
+    <br>
+<a href='https://alphavantag eapi.co/timeseries/analytics?SYMBOLS=AMZN,MSFT,NVDA&RANGE=2024-05-01&RANGE=2024-05-31&INTERVAL=DAILY&OHLC=close&CALCULATIONS=MEAN,STDDEV,CORRELATION&apikey=DF1S1NJLNRR7506D'>
+        <button style= "font-size:20px;background-color:green;color:white; border-radius:50px;">Microsoft</button> -->
+</a>
+</body>
+</html> 

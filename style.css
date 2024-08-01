@@ -1,0 +1,188 @@
+h1{
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+
+}
+h4{
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+
+}
+
+#myrec{
+background-color: white;
+
+}
+
+h6{
+  font-size: medium;
+}
+
+.p{ 
+  text-align:right;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+
+}
+.button-custom {
+  font-size: 15px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: 3px solid ; /* Adding a green border */
+  padding: 5px 5px; /* Adding padding */
+  cursor:pointer; /* Changing cursor on hover */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+
+#response {
+  font-size: 10px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: 3px solid ; /* Adding a green border */
+  padding: 5px 5px; /* Adding padding */
+  cursor:pointer; /* Changing cursor on hover */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+h1{
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Verdana', sans-serif;
+    box-sizing:content-box;
+    color: black;
+    background-color: #89d4ff
+  }
+
+  h3{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+
+
+  
+  }
+
+  #chatform {
+    background-color: white;
+    min-height: 100vh;
+    }
+
+  #textarea1{
+    background-color: white;
+    border-radius: 5px;
+    border: 3px solid ; /* Adding a green border */
+    padding: 5px 5px; /* Adding padding */
+    cursor:pointer; /* Changing cursor on hover */
+    text-align: left; 
+    font-family: Arial, Helvetica, sans-serif
+  }
+  body{
+    .container {
+      display: flex;
+      justify-content: flex-end;
+  }
+
+  #viz1720735239041 {
+    background-color: blue;
+  }
+  .box {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue}
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display:grid;
+  }
+  
+  h1{
+    font-size: 20px; 
+    text-align:left;
+    font-weight: 600;
+    padding: 10 px 0;
+  
+
+  }
+  
+  h2{
+    font-size: 20px; 
+    text-align:left;
+    font-weight: 600;
+    padding: 10 px 0;
+
+  }
+  
+  .chat{
+    display: flex;
+    gap: 0px;
+    padding: 25px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  
+  .chat img{
+    width: 35px;
+    height: 35px;
+  }
+  
+
+  .messagebar{
+    position: fixed;
+    bottom: 0;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items:end;
+    justify-content: center;
+    border-top: 1px solid #494b59;
+    background-color: #33343f;
+  }
+  
+  .messagebar .bar-wrapper{
+    background-color: #494b59;
+    border-radius: 5px;
+    width: 60vw;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .bar-wrapper input{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: none;
+    color: #ccc;
+  }
+  
+  .bar-wrapper input::placeholder{
+    color: #ccc;
+  }
+  
+  .messagebar button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: green;
+    cursor: pointer;
+  }
+  
+  .message-box{
+    height: calc(100vh - 5rem);
+    overflow-y: auto;
+  }
