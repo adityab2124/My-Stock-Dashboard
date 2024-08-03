@@ -1,7 +1,7 @@
 import requests 
 import mysql.connector as sql 
 import yfinance as yf 
-
+import pandas as pd
 
 # yf api, downloading quarterly stock data 
 msft_data = yf.download('AAPL', start='2018-01-01', end='2024-06-01', interval='3mo')
@@ -11,7 +11,6 @@ meta_data = yf.download('NVDA', start='2018-01-01', end='2024-06-01', interval='
 
 
 
-import pandas as pd
 
 
 
