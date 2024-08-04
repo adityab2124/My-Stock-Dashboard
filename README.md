@@ -15,7 +15,6 @@ The project is organized into the following components:
 
 1. **options:alphavan.py**: Manages the backend server and handles API requests to AlphaVantage Financial API. It uploads data to MySQL Workbench.
 2. **yfdatacall.py**: Manages the backend server and handles API requests to Yahoo Finance API. It also uploads data to MySQL Workbench.
-3. **#yfinancetest.py**: Used for testing API calls and dictionaries (not essential).
 4. **gptscript.js**: Integrates the GPT API chatbot.
 5. **index.html**: Contains the Tableau dashboard and chatbot interface.
 
