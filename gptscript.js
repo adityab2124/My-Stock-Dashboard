@@ -1,4 +1,51 @@
-// code for gpt chatbot / to use chatbot, use https://stockdashboard.tiiny.site/
+// code for gpt chatbot /
+
+///netlify function 
+
+const fetch = require('node-fetch');
+
+exports.handler = async (event, context) => {
+  const API_KEY = process.env.GPT_KEY;
+  const body = JSON.parse(event.body);
+  const { mytext } = body;
+
+  const response = await fetch('https://api.openai.com/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${API_KEY}`,
+    },
+    body: JSON.stringify({
+      model: 'gpt-4',
+      messages: [{ role: 'user', content: mytext }],
+      temperature: 1.0,
+      top_p: 0.7,
+      n: 1,
+      stream: false,
+      presence_penalty: 0,
+      frequency_penalty: 0,
+    }),
+  });
+
+  if (!response.ok) {
+    return {
+      statusCode: response.status,
+      body: JSON.stringify({ error: 'Failed to fetch data' }),
+    };
+  }
+
+  const data = await response.json();
+
+  return {
+    statusCode: 200,
+    body: JSON.stringify(data),
+  };
+};
+
+///
+
+
+
 
 
 const form = document.getElementById('chat-form');
